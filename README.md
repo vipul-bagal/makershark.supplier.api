@@ -4,6 +4,10 @@
 
 This Spring Boot project provides an API for managing and querying suppliers and manufacturing processes. The project includes endpoints to create, read, and search for suppliers based on various criteria.
 
+I've created a configuration to insert number of manufacturing processes and supplier records at initialization so that API results can be checked/experienced directly by running the application.
+
+Now, follow below steps to see API output.
+
 ## Prerequisites
 
 - **Java 17:** Ensure you have Java 17 installed on your machine. You can download it from the [official Java website](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html).
@@ -34,7 +38,6 @@ mvn clean install
 ```bash
 ./mvnw spring-boot:run
 ```
-
 
 ## Steps to consume API
 
