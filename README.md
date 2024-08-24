@@ -53,7 +53,7 @@ request body(raw, JSON):
 {
     "location": "Delhi",
     "businessType": "medium_scale",
-    "manufacturingProcesses": ["3d_printing", "cnc_machining"],
+    "manufacturingProcesses": ["3d_printing", "coating"],
     "pageNumber": 0,
     "size": 4
 }
