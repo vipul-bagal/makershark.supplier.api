@@ -6,7 +6,7 @@ This Spring Boot project provides an API for managing and querying suppliers and
 
 I've created a configuration to insert number of manufacturing processes and supplier records at initialization so that API results can be checked/experienced directly by running the application.
 
-Now, follow below steps to see API output.
+Now, follow below steps to see API in action.
 
 ## Prerequisites
 
