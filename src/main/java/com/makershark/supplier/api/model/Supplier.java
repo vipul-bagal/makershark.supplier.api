@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Data
@@ -33,13 +34,12 @@ public class Supplier {
 
 
     @ManyToMany
-    @JsonIgnore
     @JoinTable(
             name = "supplier_manufacturing_process",
             joinColumns = @JoinColumn(name = "supplier_id"),
             inverseJoinColumns = @JoinColumn(name = "manufacturing_process_id")
     )
-    private List<ManufacturingProcess> manufacturingProcesses;
+    private Set<ManufacturingProcess> manufacturingProcesses;
 
     public void setId(Long id) {
         this.id = id;
@@ -61,7 +61,7 @@ public class Supplier {
         this.businessType = businessType;
     }
 
-    public void setManufacturingProcesses(List<ManufacturingProcess> manufacturingProcesses) {
+    public void setManufacturingProcesses(Set<ManufacturingProcess> manufacturingProcesses) {
         this.manufacturingProcesses = manufacturingProcesses;
     }
 

@@ -72,7 +72,7 @@ public class SupplierRecordsInitializer implements CommandLineRunner {
             Set<ManufacturingProcess> assignedProcesses = processes.stream()
                     .limit(2) // Assign a couple of processes randomly to each supplier
                     .collect(Collectors.toSet());
-            supplier.setManufacturingProcesses(assignedProcesses.stream().toList());
+            supplier.setManufacturingProcesses(assignedProcesses);
 
             // Save the supplier to the database
             supplierRepository.save(supplier);
